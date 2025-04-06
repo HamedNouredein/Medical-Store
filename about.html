@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - MediMart</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>MediMart</h1>
+            <p class="tagline">Quality Medical Supplies</p>
+          </div>
+          <div class="icons">
+            <div class="search-icon">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+              />
+              <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count">0</span>
+            </div>
+            <div class="user-actions">
+              <a
+                href="login.html"
+                class="login-icon"
+                id="login-icon"
+                title="Login"
+              >
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a
+                href="register.html"
+                class="signup-icon"
+                id="signup-icon"
+                title="Sign Up"
+              >
+                <i class="fa-solid fa-user-plus"></i>
+              </a>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="toggle-ball"></span>
+            </div>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><span>About Us</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <h2 class="section-title">About MediMart</h2>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="img/about-us.png"
+              alt="MediMart Team"
+              onerror="this.src='https://via.placeholder.com/600x400?text=MediMart+Team'"
+            />
+          </div>
+
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              MediMart was founded in 2010 with a simple mission: to provide
+              high-quality medical supplies at affordable prices. What started
+              as a small family business has grown into a trusted name in the
+              healthcare industry.
+            </p>
+
+            <h3>Our Mission</h3>
+            <p>
+              We are committed to improving healthcare accessibility by offering
+              a wide range of medical equipment and supplies. Our goal is to
+              help individuals and healthcare professionals access the tools
+              they need to provide and receive the best care possible.
+            </p>
+
+            <h3>Quality Assurance</h3>
+            <p>
+              All products available at MediMart undergo rigorous quality checks
+              to ensure they meet industry standards. We partner with reputable
+              manufacturers and suppliers to bring you products you can trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" id="close-cart">&times;</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added here using JavaScript -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <p>Total: $<span id="cart-total">0</span></p>
+        </div>
+        <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="team-section">
+      <h3 class="team-title">Our Team</h3>
+    </div>
+    <section class="team-slider">
+      <div class="swiper myTeamSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="team-member">
+              <div class="member-image">
+                <img
+                  src="img/ahmed.jpg"
+                  alt="Ahmed Selim"
+                  onerror="this.src='https://via.placeholder.com/200x200?text=CEO'"
+                />
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+              <h4>Ahmed Selim</h4>
+              <p>Developer FullStack .Net</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-member">
+              <div class="member-image">
+                <img src="/img/hamed (2).png" alt="Hamed" />
+                <div class="social-icons">
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+              <h4>Hamed Nouredein</h4>
+              <p>Developer FullStack .Net</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-member">
+              <div class="member-image">
+                <img src="img/01.jpg" alt="Alaa" />
+                <div class="social-icons">
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+              <h4>Aalaa</h4>
+              <p>Developer FullStack .Net</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-member">
+              <div class="member-image">
+                <img
+                  src="img/eman.jpg"
+                  alt="Eman"
+                  onerror="this.src='https://via.placeholder.com/200x200?text=Medical+Director'"
+                />
+                <div class="social-icons">
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+              <h4>Eman</h4>
+              <p>Developer FullStack .Net</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-member">
+              <div class="member-image">
+                <img src="img/assmaa.png" alt="Assmaa" />
+                <div class="social-icons">
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+              <h4>Assmaa</h4>
+              <p>Developer FullStack .Net</p>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>MediMart</h3>
+            <p>
+              Your trusted source for quality medical supplies and equipment.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-envelope"></i> info@medimart.com</p>
+            <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 MediMart. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

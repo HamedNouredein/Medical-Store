@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.payment-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    text-align: center;
+    margin: 50px auto;
+}
+h2 {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+   
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 15px 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+#message {
+    margin-top: 10px;
+    color: red;
+}

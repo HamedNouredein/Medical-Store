@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMart - Quality Medical Supplies</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>MediMart</h1>
+                    <p class="tagline">Quality Medical Supplies</p>
+                </div>
+                <div class="icons">
+                    <div class="search-icon">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="cart-icon" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="login.html" class="login-icon" id="login-icon" title="Login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="register.html" class="signup-icon" id="signup-icon" title="Sign Up">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="toggle-ball"></span>
+                    </div>
+                    
+                    <div class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="img/slide11.jpg" alt="Medical Equipment">
+                    <div class="slider-content">
+                        <h2>Exclusive Offer on Medical Equipment</h2>
+                        <p>Get up to 30% discount on healthcare essentials.</p>
+                        <a href="#featured-products" class="shop-btn">Shop Now</a>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="img/pro8.jpg" alt="Diagnostic Tools">
+                    <div class="slider-content">
+                        <h2>Reliable Diagnostic Tools</h2>
+                        <p>Accurate results for better healthcare decisions.</p>
+                        <a href="#featured-products" class="shop-btn">Shop Now</a>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="img/slide14.jpg" alt="Home Medical Supplies">
+                    <div class="slider-content">
+                        <h2>Essential Home Medical Supplies</h2>
+                        <p>Quality products to support your health.</p>
+                        <a href="products.html" class="shop-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="featured-services">
+        <div class="container">
+            <div class="icon-box">
+                <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                <h4 class="title"><a href="#">Fast Shipping</a></h4>
+                <p class="description">Get your medical devices delivered quickly and safely.</p>
+            </div>
+    
+            <div class="icon-box">
+                <div class="icon"><i class="fas fa-medkit"></i></div>
+                <h4 class="title"><a href="#">Certified Products</a></h4>
+                <p class="description">We offer high-quality and approved medical devices.</p>
+            </div>
+    
+            <div class="icon-box">
+                <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                <h4 class="title"><a href="#">Secure Shopping</a></h4>
+                <p class="description">Your data and transactions are fully protected.</p>
+            </div>
+    
+            <div class="icon-box">
+                <div class="icon"><i class="fas fa-headset"></i></div>
+                <h4 class="title"><a href="#">24/7 Customer Support</a></h4>
+                <p class="description">We are here to help you with your healthcare needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products" id="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products" id="product-list">
+                <!-- Products will be dynamically added here using JavaScript -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar"> 
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"> 
+            <!-- Cart items will be added here using JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0</span></p>
+            </div>
+          <div>
+              <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="notification-container"></div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MediMart</h3>
+                    <p>Your trusted source for quality medical supplies and equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-envelope"></i> info@medimart.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/swiper.js"></script>
+     <script src="js/login.js"></script>
+</body>
+</html>
+

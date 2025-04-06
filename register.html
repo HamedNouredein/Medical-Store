@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MediMart</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>MediMart</h1>
+                    <p class="tagline">Quality Medical Supplies</p>
+                </div>
+                <div class="icons">
+                    <div class="search-icon">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="cart-icon" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="user-actions">
+                        <a href="login.html" class="login-icon" id="login-icon" title="Login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="register.html" class="signup-icon" id="signup-icon" title="Sign Up">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a>
+                    </div>
+                    <div class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="toggle-ball"></span>
+                    </div>
+                    <div class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="section-form sign-in">
+    <div class="form-container">
+        <p class="title">Welcome to MediMart</p>
+        <form class="form sign-form">
+            <input type="text" id="username" placeholder="Username" required >
+            <input type="email" id="email" placeholder="Email" required>
+             <div class="form-group">
+            <div class="password-input">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <button type="button" class="toggle-password">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="password-input">
+              <input
+                type="password"
+                id="cn-password"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                required
+              />
+              <button type="button" class="toggle-password">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="signup-error" class="error-message" style="display: none">
+            <p id="error-pre"></p>
+          </div>
+            <button type="submit" class="form_btn sign-btn"  >sign up</button>
+        </form>
+<p class="sign-in-page">
+    Do have an account? <a href="login.html">login</a>
+</p>
+    </div>
+ 
+  </section>
+
+    
+    <div class="cart-sidebar" id="cart-sidebar"> 
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"> 
+            <!-- Cart items will be added here using JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0</span></p>
+            </div>
+            <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MediMart</h3>
+                    <p>Your trusted source for quality medical supplies and equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-envelope"></i> info@medimart.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
+

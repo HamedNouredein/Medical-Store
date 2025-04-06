@@ -1,0 +1,206 @@
+
+.check-out{
+    margin: 50px 0;
+}
+.check-out .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check-out form{
+   width: 45%; 
+   background: #fff;
+}
+
+.check-out form h2{
+    padding: 10px 20px;
+    background-color: var(--primary-dark);
+    text-transform: capitalize;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.check-out form  .address
+.check-out form .coupon-Code{
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.check-out form .inputs{
+    display: flex;
+    flex-direction: column;
+    padding:15px 20px ;
+    
+}
+
+.check-out form .inputs label{
+    counter-reset:var(--dark-color) ;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.check-out form .inputs input{
+    margin: 5px 0 20px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: 0.3 ease-in-out;
+}
+
+.check-out form .inputs input:focus{
+    border-color: var(--primary-color);
+}
+
+.check-out .order-samary{
+    width: 45%;
+    background: #fff;
+    padding: 0 20px;
+
+}
+
+.check-out .order-samary h1{
+    border-bottom:1px solid var(--border-color) ;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.check-out .order-samary .items .item_cart{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.check-out .order-samary .items .item_cart img{
+    width: 150px;
+}
+.check-out .order-samary .items .item_cart h4{
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+.check-out .order-samary .items .item_cart p{
+    color: var(--dark-color);
+    font-size: 18px;
+}
+.check-out .order-samary .total{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.check-out .order-samary .total p{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.check-out .order-samary .total span{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--text-color);
+}
+.check-out .order-samary .button_div{
+    border-top: 1px solid var(--border-color);
+    padding: 30px 0;
+}
+.check-out .order-samary .button_div button{
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 15px 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.check-out .order-samary .button_div button:hover{
+    background: transparent;
+    color: var(--primary-color);
+}
+.check-out .order-samary .credit-card{
+    text-align: center;
+}
+
+.check-out .order-samary .credit-card p {
+    margin-bottom: 15px;
+
+}
+.check-out .order-samary .credit-card img {
+    margin-right: 15px;
+    margin-bottom: 30px;
+
+}
+
+/* Responsive */
+@media (max-width: 1000px ) {
+    .check-out .container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .check-out form{
+        width: 70%;
+    }
+    .check-out .order-samary{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px ) {
+
+    .check-out form{
+        width: 100%;
+    }
+    .check-out .order-samary{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px ) {
+
+    
+    .check-out form h2{
+        font-size:20px ;
+    }
+    .check-out .order-samary h1{
+        font-size: 20px;
+    }
+    .check-out .order-samary .items .item_cart h4{
+        font-size: 14px;
+    }
+    .check-out .order-samary .items .item_cart img{
+        width: 100px;
+    }
+    .check-out .order-samary .total p{
+       font-size: 20px;
+    }
+    .check-out .order-samary .total span{
+        font-size: 22px;
+    }
+    .check-out .order-samary .button_div button{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
